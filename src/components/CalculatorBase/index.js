@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { CardContent, Button, CircularProgress, Backdrop } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles'
+import { CardContent, Button } from '@material-ui/core';
 import triangle from '../../assets/images/vector.png';
 import { CssTextField } from '../../styles/index'
 import {
@@ -15,12 +14,10 @@ const keypadNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 function CalculatorBase(props) {
     //react hooks e lógicas
-    const classes = useStyles();
     const [catetoOposto, setCatetoOposto] = useState("")
     const [catetoAdjacente, setCatetoAdjacente] = useState("")
     const [hipotenusa, setHipotenusa] = useState("")
     const [focusedTextField, setFocusedTextField] = useState("")
-    const [loading, setLoading] = useState(false)
 
     const keypadButtons = keypadNumbers.map((number) => {
         return (
