@@ -1,11 +1,12 @@
 import React from 'react'
 import {AppContainer} from './styles/styledComponents'
-
+import Header from './components/Header'
+import CalculatorBase from './components/CalculatorBase'
 const App = () => {
   return (
     <AppContainer>
-    
-      teste
+      <Header/>
+      <CalculatorBase/>
     </AppContainer>
   )
 }

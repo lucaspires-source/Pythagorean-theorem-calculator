@@ -6,7 +6,7 @@ const Header = () => {
             <AppBar position="static">
                 <Toolbar >
                     <Typography variant="h6" color="inherit">
-                        Pythagoras Calculator
+                        Calculadora do Pitágoras
                     </Typography>
                 </Toolbar>
             </AppBar>
